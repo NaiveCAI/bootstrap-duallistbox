@@ -831,7 +831,7 @@
     destroy: function() {
       this.container.remove();
       this.element.show();
-      $.data(this, 'plugin_' + pluginName, null);
+      $.data(this.element[0], 'plugin_' + pluginName, null);
       return this.element;
     }
   };
